@@ -5,70 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Modern Portfolio</title>
     <style>
-        :root { --bg: #f0f2f5; --card: white; --text: #1c1e21; --header: #2c3e50; }
-        .dark-mode { --bg: #18191a; --card: #242526; --text: #e4e6eb; --header: #111; }
-        body { font-family: sans-serif; margin: 0; background: var(--bg); color: var(--text); transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
-        header { background: var(--header); color: white; width: 100%; padding: 3rem 0; text-align: center; position: relative; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; margin-top: -60px; background: #ddd; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .container { max-width: 800px; width: 90%; padding: 20px 0; }
-        .card { background: var(--card); padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
-        #theme-btn { position: absolute; top: 15px; right: 15px; padding: 8px 15px; border-radius: 20px; border: none; cursor: pointer; background: #3498db; color: white; font-weight: bold; }
-        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; }
+        :root { --bg: #f0f2f5; --card: white; --header: #334e68; --text: #333; }
+        .dark-mode { --bg: #18191a; --card: #242526; --header: #102a43; --text: #eee; }
+        body { font-family: sans-serif; margin: 0; background: var(--bg); color: var(--text); transition: 0.3s; text-align: center; }
+        header { background: var(--header); color: white; padding: 40px 20px; }
+        .container { max-width: 800px; width: 90%; margin: 20px auto; }
+        .card { background: var(--card); padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .profile-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #3490dc; }
+        .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; background: #3490dc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        #theme-btn { position: absolute; top: 20px; right: 20px; padding: 8px 15px; cursor: pointer; border-radius: 20px; border: none; background: #3490dc; color: white; }
     </style>
 </head>
 <body>
+    <button id="theme-btn" onclick="toggleTheme()">🌓 Toggle Mode</button>
     <header>
-        <button id="theme-btn" onclick="toggleTheme()">🌓 Toggle Mode</button>
         <h1>My Modern Portfolio</h1>
         <p>Built with Termux</p>
     </header>
     <div class="container">
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+            <img src="me.jpg" alt="Profile" class="profile-img">
             <h2>Welcome to My Space</h2>
             <p>I am a developer building projects directly from my mobile device.</p>
-            <a href="mailto:your-email@gmail.com" class="btn">Contact Me</a>
+            <a href="mailto:justinbro834@gmail.com" class="btn">Contact Me</a>
         </div>
     </div>
     <script>
-        function toggleTheme() { document.body.classList.toggle("dark-mode"); }
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
     </script>
 </body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Modern Portfolio</title>
-    <style>
-        :root { --bg: #f0f2f5; --card: white; --text: #1c1e21; --header: #2c3e50; }
-        .dark-mode { --bg: #18191a; --card: #242526; --text: #e4e6eb; --header: #111; }
-        body { font-family: sans-serif; margin: 0; background: var(--bg); color: var(--text); transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
-        header { background: var(--header); color: white; width: 100%; padding: 3rem 0; text-align: center; position: relative; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; margin-top: -60px; background: #ddd; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .container { max-width: 800px; width: 90%; padding: 20px 0; }
-        .card { background: var(--card); padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
-        #theme-btn { position: absolute; top: 15px; right: 15px; padding: 8px 15px; border-radius: 20px; border: none; cursor: pointer; background: #3498db; color: white; font-weight: bold; }
-        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
-</head>
-<body>
-    <header>
-        <button id="theme-btn" onclick="toggleTheme()">🌓 Toggle Mode</button>
-        <h1>My Modern Portfolio</h1>
-        <p>Built with Termux</p>
-    </header>
-    <div class="container">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-            <h2>Welcome to My Space</h2>
-            <p>I am a developer building projects directly from my mobile device.</p>
-            <a href="mailto:your-email@gmail.com" class="btn">Contact Me</a>
-        </div>
-    </div>
-    <script>
-        function toggleTheme() { document.body.classList.toggle("dark-mode"); }
-    </script>
-</body>
-</html>>
-
+</html>
