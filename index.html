@@ -1,10 +1,28 @@
-<html>
+index.html<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Modern Website</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #f4f7f6; color: #333; display: flex; flex-direction: column; align-items: center; }
+        header { background: #2c3e50; color: white; width: 100%; padding: 2rem 0; text-align: center; }
+        .container { max-width: 800px; padding: 40px 20px; text-align: center; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; background: #3498db; color: white; text-decoration: none; border-radius: 25px; }
+        footer { margin-top: 50px; font-size: 0.8rem; color: #aaa; }
+    </style>
 </head>
 <body>
-  <h1>My Modern Website</h1>
-  <a href="mailto:your-email@gmail.com" class="contact-btn">Contact Me</a>
+    <header><h1>My Modern Website</h1></header>
+    <div class="container">
+        <div class="card">
+            <h2>Welcome to My Space</h2>
+            <p>I am a developer building projects directly from my mobile device using Termux.</p>
+            <a href="mailto:your-email@gmail.com" class="btn">Contact Me</a>
+        </div>
+    </div>
+    <footer>&copy; 2026 Built with Termux</footer>
 </body>
 </html>
 
